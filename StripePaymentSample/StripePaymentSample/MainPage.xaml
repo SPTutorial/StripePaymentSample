@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="StripePaymentSample.MainPage">
+
+    <StackLayout Padding="20">
+        <Entry Placeholder="Card No" Keyboard="Numeric" MaxLength="16" x:Name="cardNo"/>
+        <Entry Placeholder="Expire Year" Keyboard="Numeric" MaxLength="2" x:Name="expireYear"/>
+        <Entry Placeholder="Expire Month" Keyboard="Numeric" MaxLength="2" x:Name="expireMonth"/>
+        <Entry Placeholder="CVV" Keyboard="Numeric" MaxLength="3" x:Name="cvv"/>
+
+        <Button Clicked="Button_Clicked"/>
+    </StackLayout>
+
+</ContentPage>
